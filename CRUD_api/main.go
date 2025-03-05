@@ -1,6 +1,6 @@
 package main
 
-import {
+import (
 	"fmt"
 	"log"
 	"net/http"
@@ -8,8 +8,8 @@ import {
 	"math/rand"
 	"strconv"
 	"github/gorilla/mux"
-}
 
+)
 type Movie struct{
 	ID string `json"ID"`
 	Isbn string `"json"isbn"`
@@ -26,7 +26,7 @@ type Director struct{
 var movies []Movie
 
 func main(){
-	r := mux.NewRouter()
+	r := mux.NewRouter("/movies")
 
 
 }
